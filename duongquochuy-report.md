@@ -67,6 +67,8 @@ Trả lời các ca mơ hồ trong phiếu:
 Số shape trong file không tính 4 tag. Cột "job" đếm trên bảng Objects của CVAT.
 
 ## 6. Ảnh chụp màn hình
+Ảnh 2 (A08) và ảnh 3 (B06, lane `position = other` phóng to theo cung) có chứa ảnh gốc BDD100K/WoodScape, nên không đưa lên repo theo [ATTRIBUTION.md](ATTRIBUTION.md); hai file được gửi kèm báo cáo qua kênh nộp bài.
+
 1. Tab Labels của project.  
    ![Labels của project](images/report/01-labels.png)
 2. Một ảnh camera trước đã gán đủ (làn, vùng lái, đèn/biển).  
