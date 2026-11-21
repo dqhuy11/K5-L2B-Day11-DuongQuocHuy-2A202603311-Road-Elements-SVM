@@ -7,7 +7,7 @@
 Họ tên: Dương Quốc Huy               Mã học viên: 2A202603311  
 Phiên bản CVAT (Help → About): __________  
 Guideline: Road v1.0    Lần nộp (`revision` trong manifest): 1  
-Thời điểm export (ngày giờ trên CVAT): 21/11/2026 10:50 (front và fisheye), giờ Việt Nam    Số lần nộp lại sau Rework: 0  
+Thời điểm export (ngày giờ trên CVAT): 21/11/2026 11:20 (front và fisheye), giờ Việt Nam    Số lần nộp lại sau Rework: 0  
 
 ## 1. Kiểm project
 | Mục | Đúng như guideline Road v1.0? | Ghi chú |
@@ -24,7 +24,7 @@ Cách đặt tag ảnh trên bản CVAT này: chọn công cụ **Tag** ở than
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | front | 12 | 25 | 2 | 5 | 25 | 22 | 17 |
 | front-extra (đã làm 0 / 4) | 0 | — | — | — | — | — | — |
-| fisheye | 8 | 15 | 7 | 10 | 0 | 7 | 7 |
+| fisheye | 8 | 15 | 7 | 10 | 0 | 8 | 7 |
 | fisheye-extra (đã làm 0 / 4) | 0 | — | — | — | — | — | — |
 
 Nguồn: `duongquochuy-manifest.json` (revision 1, `shapes_by_label`). Mọi ảnh đều có đủ 4 tag (`images_all_tags` = 12 và 8), `contains_images` = false.

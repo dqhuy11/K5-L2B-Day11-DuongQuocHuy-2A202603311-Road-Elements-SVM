@@ -4,12 +4,12 @@
   "guideline": "Road v1.0",
   "name": "duongquochuy",
   "revision": 1,
-  "created_at": "2026-11-21T03:52:07+00:00",
+  "created_at": "2026-11-21T04:21:53+00:00",
   "files": [
     {
       "file": "duongquochuy-front.zip",
-      "bytes": 44634,
-      "sha256": "5c19c5c21ba222b99c3506ca1a211baa3c555e2c2285385491d0a711cb047185",
+      "bytes": 44606,
+      "sha256": "8c1b98030f1cf250f81901e05d7fa89f9334e15a19cbd5de1b8eff5c1c823d01",
       "contains_images": false,
       "images": 12,
       "images_unlabelled": 0,
@@ -25,8 +25,8 @@
     },
     {
       "file": "duongquochuy-fisheye.zip",
-      "bytes": 26441,
-      "sha256": "0a43cf7e444b710a1e4c68e5bee0b96693b2f114215166b01c10f10720a991cd",
+      "bytes": 26885,
+      "sha256": "a8befd4b25e52dc1c21289ec77ee7e47afa241fd6246fc7d12de126d946798a4",
       "contains_images": false,
       "images": 8,
       "images_unlabelled": 0,
@@ -35,14 +35,14 @@
         "crosswalk": 10,
         "lane": 15,
         "road_curb": 7,
-        "traffic_light": 7,
+        "traffic_light": 8,
         "traffic_sign": 7
       }
     }
   ],
   "lint": {
     "nặng": 6,
-    "chính": 9,
+    "chính": 3,
     "nhẹ": 0
   },
   "note": "Tạo bởi road_check lint. Mô tả file đã gửi, không phải kết luận chất lượng."
