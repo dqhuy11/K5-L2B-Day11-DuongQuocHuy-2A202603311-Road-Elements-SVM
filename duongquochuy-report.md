@@ -42,10 +42,19 @@ Nguồn: `duongquochuy-manifest.json` (revision 1, `shapes_by_label`). Mọi ả
 | B04, B06, B08 | drivable | Gán drivable cho ảnh fisheye không (B04 còn có làn BUS) | Không gán drivable ở lô fisheye | Đã hỏi coach: lô fisheye không yêu cầu drivable |
 
 ## 4. Phiếu QC 1 nhận được
-Bạn kiểm lô của tôi: __________  Quyết định nhận được: __________  
+Bạn kiểm lô của tôi: Đặng Trung Hiếu (mẫu A01–A06, 66 nhãn)  Quyết định nhận được: **Rework** (2 lỗi nặng, lỗi chính 2/66 = 3,0 %)  
 | Mã lỗi | Số lỗi | Đồng ý? | Đã sửa? |
 | --- | ---: | --- | --- |
-|  |  |  |  |
+| QC1-02 (A03: thiếu L1, vạch vàng liền bên trái làn) | 1 | Đồng ý | Chưa |
+| QC1-03 (A03: vạch đứt bên phải làn ghi `L1`, đúng là `R1`) | 1 | Đồng ý | Chưa |
+| QC1-07 (A02: polygon `alternative` phủ lề bên phải vạch trắng liền) | 1 | Đồng ý | Chưa |
+| QC1-09 (A01: biển xanh chỉ dẫn ghi `prohibitory`, đúng là `information`) | 1 | Đồng ý | Chưa |
+
+Trả lời các ca mơ hồ trong phiếu:
+- A05, A06: coach đã xác nhận không có vạch, được miễn QC1-02.
+- A03: polyline đang gán `R1` (sát hàng xe đỗ) là vạch đứt kế tiếp bên phải. Sau khi đổi vạch đứt sát xe thành `R1`, polyline này sẽ thành `R2`.
+- A01: L2 là vạch đôi, mentor đã xác nhận. L1/R1 là hai dãy vạch đứt sát xe, R2 là vạch vàng mép phải.
+- A03, A04 `timeofday`: đang chờ lead.
 
 ## 5. Kiểm file export
 | File | Mở lại được? | Số shape ảnh 1 (job / file) | Số shape ảnh 2 (job / file) | Tag camera có trong XML? |
