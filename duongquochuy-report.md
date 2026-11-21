@@ -5,7 +5,7 @@
 **Miễn QC1-02 (coach đã xem ảnh và xác nhận không thấy vạch):** A05 (L1, R1), A06 (L1, R1), A07 (L1), A09 (R1). Lint vẫn đếm 6 cảnh báo này trong `lint.nặng` của manifest.
 
 Họ tên: Dương Quốc Huy               Mã học viên: 2A202603311  
-Phiên bản CVAT (Help → About): __________  
+Phiên bản CVAT (Help → About): CVAT local (chạy trên máy, `localhost:8080`)  
 Guideline: Road v1.0    Lần nộp (`revision` trong manifest): 2  
 Thời điểm export (ngày giờ trên CVAT): 21/11/2026 11:36 (front), 11:32 (fisheye), giờ Việt Nam    Số lần nộp lại sau Rework: 1  
 
@@ -61,10 +61,10 @@ Trả lời các ca mơ hồ trong phiếu:
 ## 5. Kiểm file export
 | File | Mở lại được? | Số shape ảnh 1 (job / file) | Số shape ảnh 2 (job / file) | Tag camera có trong XML? |
 | --- | --- | --- | --- | --- |
-| `duongquochuy-front.zip` | Có (`road_check lint` đọc được, CVAT for images 1.1) | A01: __ / 11 | A02: __ / 7 | Có (`front`, cả 12 ảnh) |
-| `duongquochuy-fisheye.zip` | Có (`road_check lint` đọc được, CVAT for images 1.1) | B01: __ / 5 | B02: __ / 6 | Có, cả 8 ảnh (`fisheye_front` B01–B02, `fisheye_rear` B03–B04, `fisheye_left` B05–B06, `fisheye_right` B07–B08) |
+| `duongquochuy-front.zip` | Có (`road_check lint` đọc được, CVAT for images 1.1) | A01: 11 / 11 | A02: 6 / 6 | Có (`front`, cả 12 ảnh) |
+| `duongquochuy-fisheye.zip` | Có (`road_check lint` đọc được, CVAT for images 1.1) | B01: 5 / 5 | B02: 6 / 6 | Có, cả 8 ảnh (`fisheye_front` B01–B02, `fisheye_rear` B03–B04, `fisheye_left` B05–B06, `fisheye_right` B07–B08) |
 
-Số shape trong file không tính 4 tag. Cột "job" đếm trên bảng Objects của CVAT.
+Số shape không tính 4 tag. Cột "job" đếm trên bảng Objects của CVAT: ô "Items" ở đó gồm cả 4 tag, nên A01 hiện 15, A02 hiện 10, B01 hiện 9, B02 hiện 10. Số trong file đếm từ `annotations.xml` của bản revision 2.
 
 ## 6. Ảnh chụp màn hình
 Ảnh 2 (A08) và ảnh 3 (B06, lane `position = other` phóng to theo cung) có chứa ảnh gốc BDD100K/WoodScape, nên không đưa lên repo theo [ATTRIBUTION.md](ATTRIBUTION.md); hai file được gửi kèm báo cáo qua kênh nộp bài.
