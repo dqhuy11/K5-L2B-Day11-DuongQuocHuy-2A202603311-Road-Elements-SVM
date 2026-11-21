@@ -7,7 +7,7 @@
 Họ tên: Dương Quốc Huy               Mã học viên: 2A202603311  
 Phiên bản CVAT (Help → About): __________  
 Guideline: Road v1.0    Lần nộp (`revision` trong manifest): 2  
-Thời điểm export (ngày giờ trên CVAT): 21/11/2026 11:32 (front và fisheye), giờ Việt Nam    Số lần nộp lại sau Rework: 1  
+Thời điểm export (ngày giờ trên CVAT): 21/11/2026 11:36 (front), 11:32 (fisheye), giờ Việt Nam    Số lần nộp lại sau Rework: 1  
 
 ## 1. Kiểm project
 | Mục | Đúng như guideline Road v1.0? | Ghi chú |
