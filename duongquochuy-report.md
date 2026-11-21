@@ -6,8 +6,8 @@
 
 Họ tên: Dương Quốc Huy               Mã học viên: 2A202603311  
 Phiên bản CVAT (Help → About): __________  
-Guideline: Road v1.0    Lần nộp (`revision` trong manifest): 1  
-Thời điểm export (ngày giờ trên CVAT): 21/11/2026 11:20 (front và fisheye), giờ Việt Nam    Số lần nộp lại sau Rework: 0  
+Guideline: Road v1.0    Lần nộp (`revision` trong manifest): 2  
+Thời điểm export (ngày giờ trên CVAT): 21/11/2026 11:32 (front và fisheye), giờ Việt Nam    Số lần nộp lại sau Rework: 1  
 
 ## 1. Kiểm project
 | Mục | Đúng như guideline Road v1.0? | Ghi chú |
@@ -22,12 +22,12 @@ Cách đặt tag ảnh trên bản CVAT này: chọn công cụ **Tag** ở than
 ## 2. Số lượng đã gán
 | Task | Ảnh | lane | road_curb | crosswalk | drivable | traffic_light | traffic_sign |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| front | 12 | 25 | 2 | 5 | 25 | 22 | 17 |
+| front | 12 | 26 | 2 | 5 | 24 | 22 | 17 |
 | front-extra (đã làm 0 / 4) | 0 | — | — | — | — | — | — |
 | fisheye | 8 | 15 | 7 | 10 | 0 | 8 | 7 |
 | fisheye-extra (đã làm 0 / 4) | 0 | — | — | — | — | — | — |
 
-Nguồn: `duongquochuy-manifest.json` (revision 1, `shapes_by_label`). Mọi ảnh đều có đủ 4 tag (`images_all_tags` = 12 và 8), `contains_images` = false.
+Nguồn: `duongquochuy-manifest.json` (revision 2, `shapes_by_label`). Mọi ảnh đều có đủ 4 tag (`images_all_tags` = 12 và 8), `contains_images` = false.
 
 ## 3. Bảng ca khó
 | Ảnh | Nhãn | Phân vân giữa | Đã chọn | Lý do |
@@ -45,10 +45,12 @@ Nguồn: `duongquochuy-manifest.json` (revision 1, `shapes_by_label`). Mọi ả
 Bạn kiểm lô của tôi: Đặng Trung Hiếu (mẫu A01–A06, 66 nhãn)  Quyết định nhận được: **Rework** (2 lỗi nặng, lỗi chính 2/66 = 3,0 %)  
 | Mã lỗi | Số lỗi | Đồng ý? | Đã sửa? |
 | --- | ---: | --- | --- |
-| QC1-02 (A03: thiếu L1, vạch vàng liền bên trái làn) | 1 | Đồng ý | Chưa |
-| QC1-03 (A03: vạch đứt bên phải làn ghi `L1`, đúng là `R1`) | 1 | Đồng ý | Chưa |
-| QC1-07 (A02: polygon `alternative` phủ lề bên phải vạch trắng liền) | 1 | Đồng ý | Chưa |
-| QC1-09 (A01: biển xanh chỉ dẫn ghi `prohibitory`, đúng là `information`) | 1 | Đồng ý | Chưa |
+| QC1-02 (A03: thiếu L1, vạch vàng liền bên trái làn) | 1 | Đồng ý | Đã sửa (revision 2): thêm L1 `solid / yellow / single` |
+| QC1-03 (A03: vạch đứt bên phải làn ghi `L1`, đúng là `R1`) | 1 | Đồng ý | Đã sửa (revision 2): đổi thành `R1`; vạch đứt kế tiếp đổi thành `R2` |
+| QC1-07 (A02: polygon `alternative` phủ lề bên phải vạch trắng liền) | 1 | Đồng ý | Đã sửa (revision 2): xóa polygon |
+| QC1-09 (A01: biển xanh chỉ dẫn ghi `prohibitory`, đúng là `information`) | 1 | Đồng ý | Đã sửa (revision 2): cả 2 biển xanh đổi thành `information` |
+
+Sửa thêm trong revision 2, ngoài phiếu: bật `edge_zone` cho biển ở B04 và B08, tắt `edge_zone` cho đèn ở B04; thêm điểm cho 4 lane fisheye chỉ có 3 điểm (B01, B02, B07, B08). Bản revision 1 (hai file zip và `duongquochuy-manifest-r1.json`) được giữ trong thư mục `r1/` trên máy. Lint revision 2: 0 cảnh báo chính, còn 6 cảnh báo QC1-02 ở các ảnh đã được coach miễn.
 
 Trả lời các ca mơ hồ trong phiếu:
 - A05, A06: coach đã xác nhận không có vạch, được miễn QC1-02.

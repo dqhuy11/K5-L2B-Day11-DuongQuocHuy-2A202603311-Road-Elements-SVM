@@ -3,21 +3,21 @@
   "format": "CVAT for images 1.1",
   "guideline": "Road v1.0",
   "name": "duongquochuy",
-  "revision": 1,
-  "created_at": "2026-11-21T04:21:53+00:00",
+  "revision": 2,
+  "created_at": "2026-11-21T04:32:50+00:00",
   "files": [
     {
       "file": "duongquochuy-front.zip",
-      "bytes": 44606,
-      "sha256": "8c1b98030f1cf250f81901e05d7fa89f9334e15a19cbd5de1b8eff5c1c823d01",
+      "bytes": 44608,
+      "sha256": "4fc9b8a34f9c076d72b117984785bb72bfb6f5a28141dfe670ed95492071cf29",
       "contains_images": false,
       "images": 12,
       "images_unlabelled": 0,
       "images_all_tags": 12,
       "shapes_by_label": {
         "crosswalk": 5,
-        "drivable": 25,
-        "lane": 25,
+        "drivable": 24,
+        "lane": 26,
         "road_curb": 2,
         "traffic_light": 22,
         "traffic_sign": 17
@@ -25,8 +25,8 @@
     },
     {
       "file": "duongquochuy-fisheye.zip",
-      "bytes": 26885,
-      "sha256": "a8befd4b25e52dc1c21289ec77ee7e47afa241fd6246fc7d12de126d946798a4",
+      "bytes": 26884,
+      "sha256": "4f0969d2246d6124d3d43621896480b0d928fdd53f9b4873b4ca04e467b19b63",
       "contains_images": false,
       "images": 8,
       "images_unlabelled": 0,
@@ -42,7 +42,7 @@
   ],
   "lint": {
     "nặng": 6,
-    "chính": 3,
+    "chính": 0,
     "nhẹ": 0
   },
   "note": "Tạo bởi road_check lint. Mô tả file đã gửi, không phải kết luận chất lượng."
